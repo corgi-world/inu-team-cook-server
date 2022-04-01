@@ -54,4 +54,8 @@ app.get("/topic", async function (req, res) {
   }
 });
 
-app.listen(3333, function () {});
+app.get("/", async function (req, res) {
+  res.send("hello~");
+});
+
+app.listen(3300, function () {});
